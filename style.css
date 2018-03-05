@@ -348,8 +348,12 @@ hr {
   display: none;
 }
 
+/*Embedded Pens*/
+.thePen {
+  height: 300px;
+}
 
-
+/* inner pages menu*/
 .details ul {
 	list-style-type: none;
   padding: 1em;
