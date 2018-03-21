@@ -155,7 +155,7 @@ a {
   margin-top: 0.1em;
 }
 
-.tagss {
+.tags {
   font-size: 0.9em;
   color: #aaa;
 }
@@ -342,6 +342,7 @@ hr {
 /*  color: white;*/
   font-size: 0.9em;
   text-align: right;
+  /*position: relative;*/
 }
 
 .invisible {
@@ -411,13 +412,13 @@ hr {
   text-align: left;
 }
 #inside nav li.current {
-  width: 30em;
+  width: 15em;
 
   text-align: right;
 }
 
 #inside nav li.current a {
-  margin-left: 9em;
+  margin-left: 3em;/*9*/
   font-weight: bold;
 }
 
@@ -440,7 +441,7 @@ hr {
   padding: 20px;
 }
 
-/* #inside .filterDiv {
+/*#inside .filterDiv {
   color: var(--white);
   float: left;
   background-color: var(--grey);
@@ -449,7 +450,7 @@ hr {
   text-align: center;
   margin: 2px;
   display: none;
-} */
+}*/
 
 #inside #css-info {
   background-color: var(--grey);
