@@ -41,7 +41,7 @@ body {
 }
 .img-desk {
   display: flex;
-  flex: 0 1 auto;
+  flex: 0 1 auto;https://discussions.udacity.com/c/standalone-courses/ud304-gwg
   width: 100%;
 }
 
@@ -55,7 +55,7 @@ p {
 }
 
 a {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .fancy {
@@ -67,7 +67,7 @@ a {
   float: left;
   font-weight: 500;
   font-size: 1em;
-  line-height: 2.1em;
+  line-height: 0.7em;/*2.1*/
 }
 
 .site-nav {
@@ -83,7 +83,7 @@ a {
 }
 
 .site-nav ul {
-  float: right; 
+  float: right;
   list-style: none;
   line-height: 2.1em;
 }
@@ -124,7 +124,7 @@ a {
 
 .site-content a {
   text-decoration: none;
-  border-bottom: 1px solid; 
+  border-bottom: 1px solid;
 }
 
 .site-content a:hover {
@@ -138,19 +138,19 @@ a {
 .sidebar {
   flex: 1 1 30%;
   padding-left: 2em;
-  
+
 }
 
 .me {
-  border-radius: 50%; 
-  box-shadow: 2px 2px 5px black; 
-  width: 80px; 
-  float: left; 
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  width: 80px;
+  float: left;
   margin-right: 20px;
 }
 
 .page-title {
-  font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif; 
+  font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
   font-size: 3em;
   margin-top: 0.1em;
 }
@@ -186,7 +186,7 @@ a {
 
 .topic-list {
   list-style: none;
-  
+
 }
 
 .topic-list.home {
@@ -212,7 +212,7 @@ a {
 }
 
 .topic-list li:hover {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 .topic-list a {
@@ -243,39 +243,39 @@ a {
 
 .social li a[href*="facebook.com"]:before {
   content: '\f230';
-  color: #3b5998; 
+  color: #3b5998;
 }
 .social li a[href*="twitter.com"]:before {
   content: '\f099';
-  color: rgb(0, 172, 237); /* #00aced */ 
+  color: rgb(0, 172, 237); /* #00aced */
 }
 .social li a[href*="github.com"]:before {
   content: '\f113';
-  color: #913399; 
+  color: #913399;
 }
 .social li a[href*="codepen.com"]:before {
   content: '\f1cb';
-  color: black; 
+  color: black;
 }
 .social li a[href*="wordpress.org"]:before {
   content: '\f19a';
-  color: #21759b; 
+  color: #21759b;
 }
 .social li a[href*="keytokorean.com"]:before {
   content: '\f1ab';
-  color: rgb(36, 152, 115); 
+  color: rgb(36, 152, 115);
 }
 .social li a[href*="aaron.kr"]:before {
   content: '\f0ac';
-  color: rebeccapurple; 
+  color: rebeccapurple;
 }
 .social li a[href*="aaronsnowberger.com"]:before {
   content: '\f1fc';
-  color: rgb(28, 53, 71); 
+  color: rgb(28, 53, 71);
 }
 
 .grid-imgs {
-  margin-top: 2em; 
+  margin-top: 2em;
   list-style: none;
   width: 100%;
   clear: both;
@@ -304,12 +304,12 @@ hr {
 }
 
 .grid-imgs .column img {
-  width: 100%; 
+  width: 100%;
   transition: all 300ms;
 }
 
 .grid-imgs span {
-  position: absolute; 
+  position: absolute;
   bottom: -3em;
   left: 0;
   width: 100%;
@@ -328,11 +328,11 @@ hr {
 }
 
 .grid-imgs li:hover > img {
-  opacity: 0.8; 
+  opacity: 0.8;
 }
 
 .grid-imgs li:hover > span {
-  bottom: 0; 
+  bottom: 0;
 }
 
 .site-footer {
@@ -353,7 +353,8 @@ hr {
   height: 300px;
 }
 
-/* inner pages menu*/
+/*Inner page navigation*/
+
 .details ul {
 	list-style-type: none;
   padding: 1em;
@@ -364,3 +365,282 @@ hr {
 	height: 20em;
 	margin-top: 2em;
 }
+
+.backdrop {
+    background:             url("https://images.unsplash.com/photo-1495486017771-e905082fd5e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d25580ad3ff3d45977a77fe4e779b5a9&auto=format&fit=crop&w=1800&h=400&q=80") center;
+    background-size:        contain;
+    margin:                 auto;
+    width:                  100%;/*100vw;*/
+     height:                 270px;
+}
+
+.text {
+    color:              white;
+    border:             4px solid;
+    background:         rgb(110, 110, 110);
+    mix-blend-mode:     multiply;
+    font:               bolder 9vw 'Alfa Slab One';
+    text-align:         center;
+    margin-top:             20;
+    padding-top: 20px;
+}
+
+/*for navigation inside pages */
+
+#inside nav ul {
+  list-style-type: none;
+  padding: 1em;
+  margin: 0;
+  width: 25em;
+  float: left;
+  border-right: 1px dotted grey;
+  height: 40em;
+  margin-top: 2em;
+}
+.main-inside {
+  color: var(--white);
+}
+
+#inside nav ul li {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: #4d4d4d;
+  color: white;
+  font-size: 2em;
+  text-align: left;
+}
+#inside nav li.current {
+  width: 30em;
+
+  text-align: right;
+}
+
+#inside nav li.current a {
+  margin-left: 9em;
+  font-weight: bold;
+}
+
+#inside nav li a { text-decoration: none; }
+#inside nav li a:link {color:white;}      /* unvisited link */
+#inside nav li a:visited {color:white;}  /* visited link */
+#inside nav li a:hover {color: white; font-size: 130%}  /* mouse over link */
+#inside nav li a:active {color:#0000FF;}  /* selected link */
+
+#inside div.content {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 9em;
+  margin-top: 1.8em;
+  max-width: 70%;
+}
+
+#inside div.content div {
+  padding: 20px;
+}
+
+#inside .filterDiv {
+  color: var(--white);
+  float: left;
+  background-color: var(--grey);
+  width: 500px;
+  line-height: 500px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+#inside #css-info {
+  background-color: var(--grey);
+}
+
+
+/* new contact form */
+.containerForm @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+.containerForm * {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.containerForm body {
+  font-family:"Open Sans", Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 12px;
+  line-height:30px;
+  color:#777;
+  background:#0CF;
+}
+
+.containerForm .container {
+  max-width:400px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+
+.containerForm #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+.containerForm #contact {
+  background:#F9F9F9;
+  padding:25px;
+  margin:50px 0;
+}
+
+.containerForm #contact h3 {
+  color: #F96;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.containerForm #contact h4 {
+  margin:5px 0 15px;
+  display:block;
+  font-size:13px;
+}
+
+.containerForm fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.containerForm #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+  width:100%;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+}
+
+.containerForm #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+  -webkit-transition:border-color 0.3s ease-in-out;
+  -moz-transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  border:1px solid #AAA;
+}
+
+.containerForm #contact textarea {
+  height:100px;
+  max-width:100%;
+  resize:none;
+}
+
+.containerForm #contact button[type="submit"] {
+  cursor:pointer;
+  width:100%;
+  border:none;
+  background:#0CF;
+  color:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  font-size:15px;
+}
+
+.containerForm #contact button[type="submit"]:hover {
+  background:#09C;
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+
+.containerForm #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.containerForm #contact input:focus, #contact textarea:focus {
+  outline:0;
+  border:1px solid #999;
+}
+.containerForm ::-webkit-input-placeholder {
+ color:#888;
+}
+.containerForm :-moz-placeholder {
+ color:#888;
+}
+.containerForm ::-moz-placeholder {
+ color:#888;
+}
+.containerForm :-ms-input-placeholder {
+ color:#888;
+}
+
+/* OLD contact form */
+/* contact-form*/
+/*
+#container-email .container {
+  font-family: Helvetica;
+  border: 1px solid  grey;
+  margin: 0 auto;
+  width:550px;
+  padding: 10px;
+}
+#container-email .header {
+  text-align: center;
+  margin: 0;
+}
+#container-email .label {
+  color: black;
+  font-size: 15px;
+}
+#container-email .form-container {
+  margin: 0 auto;
+  width: 420px;
+  padding: 10px;
+}
+#container-email .form {
+  margin: 0 auto;
+}
+#container-email .form-group {
+  font-size: 15px;
+
+  padding: 5px;
+  text-align: center;
+}
+#container-email .submit-btn {
+  font-size: 20px;
+  width: 230px;
+  height: 45px;
+}
+
+
+#container-email input:invalid {
+  border: 2px dashed red;
+}
+/*
+input:valid {
+  border: 2px solid black;
+}
+
+*/
+#container-email input:required {
+  box-shadow: 4px 4px 20px gray;// rgba(200, 0, 0, 0.85);
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+#container-email input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+#container-email input:required:hover {
+  opacity: 1;
+}
+
+*/
