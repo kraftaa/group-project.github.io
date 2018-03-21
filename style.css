@@ -350,7 +350,8 @@ hr {
 
 /*Embedded Pens*/
 .thePen {
-  height: 300px;
+  height: 350px;
+  border: grey solid 0.3em;
 }
 
 /*Inner page navigation*/
@@ -439,7 +440,7 @@ hr {
   padding: 20px;
 }
 
-#inside .filterDiv {
+/* #inside .filterDiv {
   color: var(--white);
   float: left;
   background-color: var(--grey);
@@ -448,7 +449,7 @@ hr {
   text-align: center;
   margin: 2px;
   display: none;
-}
+} */
 
 #inside #css-info {
   background-color: var(--grey);
