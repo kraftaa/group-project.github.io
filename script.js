@@ -50,14 +50,3 @@ $(document).ready(function(){
 //    $( '.site-nav ul li a' ).removeClass( 'active' );
 //   $( this ).find( 'a' ).addClass( 'active' );
 // });
-
-
-// /* Home button */
-// $( '#home-button' ).click( function() {
-//   $( '#about' ).addClass( 'invisible' );
-//   $( '#lang' ).addClass( 'invisible' );
-//   $( '#home' ).removeClass( 'invisible' );
-//   // $( '.tab' ).removeClass( 'active' );
-//    $( '.site-nav ul li a' ).removeClass( 'active' );
-//   $( this ).find( 'a' ).addClass( 'active' );
-// });
