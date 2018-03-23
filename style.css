@@ -155,7 +155,7 @@ a {
   margin-top: 0.1em;
 }
 
-.tags {
+.tagss {
   font-size: 0.9em;
   color: #aaa;
 }
@@ -342,7 +342,6 @@ hr {
 /*  color: white;*/
   font-size: 0.9em;
   text-align: right;
-  /*position: relative;*/
 }
 
 .invisible {
@@ -351,8 +350,7 @@ hr {
 
 /*Embedded Pens*/
 .thePen {
-  height: 350px;
-  border: grey solid 0.3em;
+  height: 300px;
 }
 
 /*Inner page navigation*/
@@ -412,13 +410,13 @@ hr {
   text-align: left;
 }
 #inside nav li.current {
-  width: 15em;
+  width: 30em;
 
   text-align: right;
 }
 
 #inside nav li.current a {
-  margin-left: 3em;/*9*/
+  margin-left: 9em;
   font-weight: bold;
 }
 
@@ -441,7 +439,7 @@ hr {
   padding: 20px;
 }
 
-/*#inside .filterDiv {
+#inside .filterDiv {
   color: var(--white);
   float: left;
   background-color: var(--grey);
@@ -450,7 +448,7 @@ hr {
   text-align: center;
   margin: 2px;
   display: none;
-}*/
+}
 
 #inside #css-info {
   background-color: var(--grey);
