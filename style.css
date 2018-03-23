@@ -155,7 +155,7 @@ a {
   margin-top: 0.1em;
 }
 
-.tagss {
+.tags {
   font-size: 0.9em;
   color: #aaa;
 }
@@ -342,6 +342,7 @@ hr {
 /*  color: white;*/
   font-size: 0.9em;
   text-align: right;
+  /*position: relative;*/
 }
 
 .invisible {
@@ -350,7 +351,8 @@ hr {
 
 /*Embedded Pens*/
 .thePen {
-  height: 300px;
+  height: 350px;
+  border: grey solid 0.3em;
 }
 
 /*Inner page navigation*/
@@ -410,13 +412,13 @@ hr {
   text-align: left;
 }
 #inside nav li.current {
-  width: 30em;
+  width: 15em;
 
   text-align: right;
 }
 
 #inside nav li.current a {
-  margin-left: 9em;
+  margin-left: 3em;/*9*/
   font-weight: bold;
 }
 
@@ -424,22 +426,28 @@ hr {
 #inside nav li a:link {color:white;}      /* unvisited link */
 #inside nav li a:visited {color:white;}  /* visited link */
 #inside nav li a:hover {color: white; font-size: 130%}  /* mouse over link */
-#inside nav li a:active {color:#0000FF;}  /* selected link */
+#inside nav li a:active {color:grey;}  /* selected link */
 
 #inside div.content {
+
   float: left;
   margin: 0;
   padding: 0;
   margin-left: 9em;
   margin-top: 1.8em;
   max-width: 70%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  /*background-color: #f2f2f2;*/
+  padding: 10px;
 }
 
 #inside div.content div {
   padding: 20px;
 }
 
-#inside .filterDiv {
+/*#inside .filterDiv {
   color: var(--white);
   float: left;
   background-color: var(--grey);
@@ -448,11 +456,44 @@ hr {
   text-align: center;
   margin: 2px;
   display: none;
+}*/
+
+/*#inside #css-info {
+  background-color: var(--grey);
+}*/
+
+#inside .grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  /*background-color: #2196F3;*/
+  padding: 10px;
 }
 
-#inside #css-info {
-  background-color: var(--grey);
+#inside .grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
+
+#inside img {
+  width: 50px;
+  height: 50px;
+
+}
+
+
+.courses {
+  display: block;
+  width: 700px;
+  border: 0.04em var(--greyish) solid;
+  font-size: 20px;
+  border-bottom: 0px;
+}
+
+
+
 
 
 /* new contact form */
