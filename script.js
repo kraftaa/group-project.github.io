@@ -41,6 +41,16 @@ $(document).ready(function(){
 }); // end $(document).ready method
 
 
+function myEmail() {
+    alert("Sending emails is being under-construction");
+
+    // document.getElementById("imgEmail").src = "/images/under-construction.png";
+    // document.getElementById("hidden").style.display = 'block';
+}
+
+function myComment() {
+    alert("Sending comments is being under-construction");
+}
 // /* Home button */
 // $( '#home-button' ).click( function() {
 //   $( '#about' ).addClass( 'invisible' );
