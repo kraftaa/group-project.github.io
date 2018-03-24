@@ -30,11 +30,9 @@
         <li id="editor-button"><a href="#">Editors/Pens</a></li>
         <li id="devtools-button"><a href="#">Dev Tools</a></li>
         <li id="interview-button"><a href="#">Interview</a></li>
-        <li id="makelist-button"><a href="#">Make you list</a></li>
         <li id="scholarship-button"><a href="#">Scholarship</a></li>
-
         <li id="comments-button"><a href="#">Comments</a></li>
-
+        <li id="makelist-button"><a href="#">Make you list</a></li>
       </ul>
     </nav>
 
@@ -202,7 +200,8 @@
       <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="myEmail()">Submit</button>
+       <!-- <img src = "/images/under-construction.png" id = "hidden" class = "hidden"/> -->
     </fieldset>
   </form>
      </div>
@@ -484,7 +483,7 @@
 
                 <div id="coursesCSS">
                       <h4><a class = "courses" href = "https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/"> <img src = "https://techsparx.com/blog/2018/02/img/udemy-logo.png" target="_top" style="display:inline;"> Build Responsive Real World Websites with HTML5 and CSS3</a></h4>
-                      <h4><a class = "courses" href = "https://www.codecademy.com/learn/learn-css"> <img src = "https://www.mooclab.club/attachments/logo_codecademy-png.83/" target="_top" style="display:inline;"> Learn CSSS</a></h4>
+                      <h4><a class = "courses" href = "https://www.codecademy.com/learn/learn-css"> <img src = "https://www.mooclab.club/attachments/logo_codecademy-png.83/" target="_top" style="display:inline;"> Learn CSS</a></h4>
                       <h4><a class = "courses" href = "https://www.pluralsight.com/paths/css"> <img src = "http://wenndersantos.net/assets/img/ps-first-audition/pluralsight-logo.jpg" target="_top" style="display:inline;"> CSS</a></h4>
                       <!-- <hr> -->
                       <h4><a class = "courses" href = "https://www.codecademy.com/learn/learn-html"> <img src = "https://www.mooclab.club/attachments/logo_codecademy-png.83/" target="_top" style="display:inline;"> Learn HTML</a></h4>
@@ -506,7 +505,13 @@
                 </div>
  -->
                 <div id="interestingCSS">
-
+                      <h4><a class = "courses" href = "https://danklammer.com/articles/simple-css-toggle-switch/"> <img src = "https://i.pinimg.com/originals/d5/b9/3b/d5b93bad3c10cc5b92b47e4678598548.jpg" target="_top" style="display:inline;"> Creating CSS Toggle Switch</a></h4>
+                      <h4><a class = "courses" href = "https://css-tricks.com/almanac/properties/a/animation/"> <img src = "https://cdn.css-tricks.com/wp-content/uploads/2017/09/lifetime-of-nerdery.006.jpeg" target="_top" style="display:inline;"> CSS Animation</a></h4>
+                      <h4><a class = "courses" href = "https://css-tricks.com/drawing-table/"> <img src = "https://cdn.css-tricks.com/wp-content/uploads/2017/09/lifetime-of-nerdery.006.jpeg" target="_top" style="display:inline;"> Drawing Canvas</a></h4>
+                      <!-- <hr> -->
+                      <h4><a class = "courses" href = "https://css-tricks.com/bootstrap/"> <img src = "https://cdn.css-tricks.com/wp-content/uploads/2017/09/lifetime-of-nerdery.006.jpeg" target="_top" style="display:inline;"> Bootstrap</a></h4>
+                      <h4><a class = "courses" href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> <img src = "https://cdn.css-tricks.com/wp-content/uploads/2017/09/lifetime-of-nerdery.006.jpeg" target="_top" style="display:inline;"> A guide to Flexbox</a></h4>
+                      <h4><a class = "courses" href = "https://www.w3schools.com/howto/howto_css_cards.asp"> <img src = "https://www.mooclab.club/attachments/w3schools-2-jpg.716/?temp_hash=58b084f08d631b2c79eb9b214426a055" target="_top" style="display:inline;"> How To Create a Card with CSS</a></h4>
                 </div>
 
               </div>
@@ -772,14 +777,6 @@
   </div>
   <!-- #interview -->
 
-  <!-- #make your list Page -->
-  <div id="makelist" class="main invisible">
-    <section class="site-content">
-      <p class="tags">Tag: <a>WebDevelopment</a> <a>Javascript</a> <a>Programming</a> <a>Study</a> <a>Life</a></p>
-      <p> is it possible to create form to copy links into your own list?</p>
-  </div>
-  <!-- #makelist -->
-
   <!-- #scholarship Page -->
   <div id="scholarship" class="main invisible">
     <section class="site-content">
@@ -803,11 +800,62 @@
   <div id="comments" class="main invisible">
     <section class="site-content">
       <p class="tags">Tag: <a>WebDevelopment</a> <a>Javascript</a> <a>Programming</a> <a>Study</a> <a>Life</a></p>
-      <p> Please post your comments here</p>
-      <hr>
+      <h1>Please leave your comments here:</h1>
+           <div class="flash-comments">
+                <div class="header">
+                    <div><img src="flash-comments/public/assets/comments.png"></div>
+                    <div class="text">Comments</div>
+                </div>
+                <form class="pure-form" id="comment-form">
+                    <div class="comment-form">
+                        <div class="left-side">
+                            <div class="row">
+                                <input type="text" required placeholder="enter your name" id="new_comment_name">
+                                <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                            </div>
+                            <div class="row">
+                                <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="right-side" id = "send-comment">
+                            <button
+                                type="submit"
+                                class="button-secondary pure-button"
+                                onclick="myComment()">Send Comment</button>
+                        </div>
+                    </div>
+                </form>
+                 <div class="comments-list" id="comments-list">
+                        <script id="comment-template" type="text/x-template">
+                            <div class="user-icon">
+                                <img src="flash-commentspublic/assets/userslash.png" alt = "user" />
+                            </div>
+                            <div class="comment-info">
+                                <div class="row">
+                                    <div class="name">{{name}}</div>
+                                    <div class="email">{{email}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="text">{{comment}}</div>
+                                </div>
+                            </div>
+                        </script>
+                </div>
+            </div>
+        </main>
 
-        </section>
+    </section>
   <!-- #comments -->
+
+  <!-- #make your list Page -->
+  <div id="makelist" class="main invisible">
+    <section class="site-content">
+      <p class="tags">Tag: <a>WebDevelopment</a> <a>Javascript</a> <a>Programming</a> <a>Study</a> <a>Life</a></p>
+      <hr>
+      <img src = "images/under-construction.png" style = "align-content: :center;">
+  </div>
+  <!-- #makelist -->
+
 
 </main>
 
