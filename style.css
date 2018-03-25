@@ -525,6 +525,16 @@ hr {
 /* Udacity page*/
 
 
+.tab-content img {
+  width: 90px;
+  height: 70px;
+}
+
+.nav-pills {
+  font-size: 2em;
+  padding: 15px;
+}
+
 
 /* new contact form */
 .containerForm @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
